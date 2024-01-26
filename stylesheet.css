@@ -66,4 +66,19 @@ nav .nav_tabs {
     gap: 2rem;
 }
 
+.main{
+    padding: 3rem;
+    display: flex;
+    align-items: top;
+    justify-content: space-between;
+    gap: 2%;
+    height: 100%;
+
+}
+
+.main img{
+    width: 400px;
+    height: 400px;
+
+}
 
