@@ -22,6 +22,11 @@ a{
     
 }
 
+.main {
+    display: flex;
+    
+}
+
 nav{
     width: 100%;
     padding: 0.5rem;
@@ -34,7 +39,6 @@ nav{
 
 nav .nav_icon {
     display: flex;
-    align-items: center;
     gap: 5px;
     font-weight: bold;
     
@@ -48,10 +52,10 @@ nav .nav_icon img{
 }
 
 nav .nav_tabs a {
+    display:flex;
     font-size: 2rem;
     color: #2b2a2a;
     font-weight: bold;
-
     transition: color 0.3s ease;
 
 }
@@ -81,6 +85,34 @@ nav .nav_tabs {
 .main img{
     width: 400px;
     height: 400px;
+
+}
+
+@media screen and (max-aspect-ratio: 500/400) {
+    nav {
+        max-width: 100%;
+        display: flex;
+    }
+
+    nav .nav_tabs a {
+        font-size: 24px;
+        max-width: fit-content;
+    }
+
+    .main {
+        flex-direction: column-reverse;
+        align-items: center;
+        
+    }
+
+    .heading {
+        margin-top: 2%;
+    }
+
+    img {
+        margin-bottom: 2%;
+    }
+
 
 }
 
