@@ -5,7 +5,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Open-Sans', sans-serif;
-
+    
 }
 
 img{
@@ -120,5 +120,15 @@ nav .nav_tabs {
     }
 
 
+}
+
+.about .about_bulk h1{
+    text-align: center;
+
+}
+
+.about .about_bulk p {
+    text-align: center;
+    font-size: large;
 }
 
