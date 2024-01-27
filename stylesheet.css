@@ -75,7 +75,7 @@ nav .nav_tabs {
 .main{
     padding: 3rem;
     display: flex;
-    align-items: top;
+    align-items: center;
     justify-content: space-between;
     gap: 2%;
     height: 100%;
@@ -89,9 +89,11 @@ nav .nav_tabs {
 }
 
 .main img{
+    position: relative;
     width: 400px;
     height: 400px;
-
+    box-shadow:inset;
+    opacity: 0.8; /* Adjust the opacity as needed */
 }
 
 @media screen and (max-aspect-ratio: 500/400) {
