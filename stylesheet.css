@@ -26,7 +26,7 @@ nav {
     width: 15%;
     height: 100%;
     padding: 0.5rem;
-    background-color: #cbc8a6;
+    background-image: linear-gradient( to bottom left, rgb(94, 92, 92), rgb(48, 48, 48));
     display: flex;
     position: fixed;
     align-items: center;
@@ -49,7 +49,7 @@ nav .nav_tabs {
 nav .nav_tabs a {
     display: flex;
     font-size: 2rem;
-    color: #2b2a2a;
+    color: #1a1919;
     font-weight: bold;
     transition: color 0.3s ease;
 
@@ -57,7 +57,7 @@ nav .nav_tabs a {
 
 nav .nav_tabs a:hover,
 .nav_tabs a.selected {
-    color: rgb(112, 111, 111);
+    color: rgb(161, 161, 161);
 }
 
 .main {
