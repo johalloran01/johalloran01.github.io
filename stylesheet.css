@@ -26,7 +26,7 @@ nav {
     width: 15%;
     height: 100%;
     padding: 0.5rem;
-    background-color: #6e6e6e;
+    background-color: #cbc8a6;
     display: flex;
     position: fixed;
     align-items: center;
@@ -35,7 +35,7 @@ nav {
     top: 0;
     flex-direction: column;
     overflow-y: auto;
-    box-shadow: -1px 4px 20px rgb(0, 0, 0);
+    box-shadow: -1px 4px 10px rgb(0, 0, 0);
 
 }
 
@@ -57,7 +57,7 @@ nav .nav_tabs a {
 
 nav .nav_tabs a:hover,
 .nav_tabs a.selected {
-    color: rgb(201, 201, 201);
+    color: rgb(112, 111, 111);
 }
 
 .main {
@@ -145,11 +145,11 @@ nav .nav_tabs a:hover,
     font-size: large;
 }
 
-.dropdown{
+.dropdown {
     padding-left: 22%;
     padding-right: 2rem;
     padding-top: 2rem;
-    display: flex;
+    display: inline-block;
     align-items: center;
     justify-content: space-between;
     gap: 2%;
@@ -160,11 +160,40 @@ nav .nav_tabs a:hover,
 
 .dropdown .dropbtn {
     align-items: center;
-    background-color: #8ab5d2a9;
+    background-color: #b2e8fba9;
     color: rgb(0, 0, 0);
-    padding: 16px;
-    font-size: 16px;
+    padding: 1%;
+    font-size: 24px;
     border: none;
     width: 40%;
     cursor: pointer;
+}
+
+.dropbtn:hover,
+.dropbtn:focus {
+    background-color: #cbc8a6;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.show {
+    display: block;
 }
