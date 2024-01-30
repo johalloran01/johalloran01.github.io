@@ -28,9 +28,9 @@ nav {
     padding: 0.5rem;
     background-color: #6e6e6e;
     display: flex;
+    position: fixed;
     align-items: center;
     justify-content: space-between;
-    position: fixed;
     left: 0;
     top: 0;
     flex-direction: column;
@@ -38,18 +38,11 @@ nav {
 
 }
 
-nav .nav_icon {
+nav .nav_tabs {
     display: flex;
-    gap: 5px;
-    font-weight: bold;
-
-}
-
-nav .nav_icon img {
-    width: 40px;
-    height: 40px;
-    border-radius: 100%;
-
+    flex-direction: column;
+    gap: 2rem;
+    align-items: flex-start;
 }
 
 nav .nav_tabs a {
@@ -64,14 +57,6 @@ nav .nav_tabs a {
 nav .nav_tabs a:hover,
 .nav_tabs a.selected {
     color: rgb(201, 201, 201);
-}
-
-
-
-nav .nav_tabs {
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
 }
 
 .main {
