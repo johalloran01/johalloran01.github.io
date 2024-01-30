@@ -1,14 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 
-*{
-    margin:0;
+* {
+    margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Open-Sans', sans-serif;
-    
+
 }
 
-img{
+img {
     object-fit: cover;
     object-position: top;
     box-shadow: 0 10px 10px rgb(0, 0, 0);
@@ -16,43 +16,58 @@ img{
 
 }
 
-a{
-    text-decoration:none;
-    color:rgb(119, 144, 148);
-    
+a {
+    text-decoration: none;
+    color: rgb(119, 144, 148);
+
 }
 
 .main {
+    padding-left: 20%;
+    padding-right: 2rem;
+    padding-top: 3rem;
     display: flex;
-    
-}
-
-nav{
-    width: 100%;
-    padding: 0.5rem;
-    background-color:#6e6e6e;
-    display:flex;
     align-items: center;
     justify-content: space-between;
-    
+    gap: 2%;
+    height: 100%;
+    width: 100%;
+    margin-left: auto;
+
+}
+
+nav {
+    width: 20%;
+    height: 100%;
+    padding: 0.5rem;
+    background-color: #6e6e6e;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    left: 0;
+    top: 0;
+    flex-direction: column;
+    overflow-y: auto;
+
 }
 
 nav .nav_icon {
     display: flex;
     gap: 5px;
     font-weight: bold;
-    
+
 }
 
-nav .nav_icon img{
+nav .nav_icon img {
     width: 40px;
     height: 40px;
     border-radius: 100%;
-    
+
 }
 
 nav .nav_tabs a {
-    display:flex;
+    display: flex;
     font-size: 2rem;
     color: #2b2a2a;
     font-weight: bold;
@@ -60,8 +75,8 @@ nav .nav_tabs a {
 
 }
 
-nav .nav_tabs a:hover, 
-.nav_tabs a.selected{
+nav .nav_tabs a:hover,
+.nav_tabs a.selected {
     color: rgb(201, 201, 201);
 }
 
@@ -69,10 +84,11 @@ nav .nav_tabs a:hover,
 
 nav .nav_tabs {
     display: flex;
+    flex-direction: column;
     gap: 2rem;
 }
 
-.main{
+.main {
     padding-left: 5rem;
     padding-right: 5rem;
     padding-top: 3rem;
@@ -85,17 +101,18 @@ nav .nav_tabs {
 
 }
 
-.main .heading p{
+.main .heading p {
     font-size: 1.5rem;
 
 }
 
-.main img{
+.main img {
     position: relative;
     width: 400px;
     height: 400px;
-    box-shadow:inset;
-    opacity: 0.8; /* Adjust the opacity as needed */
+    box-shadow: inset;
+    opacity: 0.8;
+    /* Adjust the opacity as needed */
 }
 
 @media screen and (max-aspect-ratio: 500/400) {
@@ -112,7 +129,7 @@ nav .nav_tabs {
     .main {
         flex-direction: column-reverse;
         align-items: center;
-        
+
     }
 
     .heading {
@@ -126,7 +143,7 @@ nav .nav_tabs {
 
 }
 
-.about .about_bulk h1{
+.about .about_bulk h1 {
     text-align: center;
 
 }
@@ -135,4 +152,3 @@ nav .nav_tabs {
     text-align: center;
     font-size: large;
 }
-
