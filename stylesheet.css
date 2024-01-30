@@ -89,13 +89,13 @@ nav .nav_tabs a:hover,
 
 @media screen and (max-aspect-ratio: 500/400) {
     nav {
-        max-width: 20%;
+        width: 20%;
         display: flex;
         box-shadow: none;
     }
 
     nav .nav_tabs a {
-        font-size: 15px;
+        font-size: 20px;
         max-width: fit-content;
     }
 
@@ -103,6 +103,11 @@ nav .nav_tabs a:hover,
         flex-direction: column-reverse;
         align-items: center;
 
+    }
+
+    .main img {
+        max-width: 200px;
+        max-height: 200px;
     }
 
     .heading {
@@ -116,6 +121,20 @@ nav .nav_tabs a:hover,
 
 }
 
+.about {
+    padding-left: 22%;
+    padding-right: 2rem;
+    padding-top: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2%;
+    height: 100%;
+    width: 100%;
+    margin-left: auto;
+
+}
+
 .about .about_bulk h1 {
     text-align: center;
 
@@ -124,4 +143,28 @@ nav .nav_tabs a:hover,
 .about .about_bulk p {
     text-align: center;
     font-size: large;
+}
+
+.dropdown{
+    padding-left: 22%;
+    padding-right: 2rem;
+    padding-top: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2%;
+    height: 100%;
+    width: 100%;
+    margin-left: auto;
+}
+
+.dropdown .dropbtn {
+    align-items: center;
+    background-color: #8ab5d2a9;
+    color: rgb(0, 0, 0);
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    width: 40%;
+    cursor: pointer;
 }
