@@ -165,8 +165,10 @@ nav .nav_tabs a:hover,
     padding: 1%;
     font-size: 24px;
     border: none;
+    border-radius: 16px;
     width: 40%;
     cursor: pointer;
+    transition: all ease-in-out 0.15s;
 }
 
 .dropbtn:hover,
@@ -174,17 +176,29 @@ nav .nav_tabs a:hover,
     background-image: linear-gradient(rgb(12, 12, 12), rgb(82, 82, 82)) ;
 }
 
-.dropdown-content {
+.edu-dropdown-content {
     display: none;
     position: absolute;
     width: auto;
-    min-width: 40%;
-    background-color: #f1f1f1;
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    border-radius: 16px;
+    max-width: 40%;
+    min-width: 60%;
+    padding: 1%;
+    background-color: #fdfdfd;
+    box-shadow: 0px 6px 4px 0px rgba(0, 0, 0, 0.2);
+    transition: all ease-in-out 0.15s;
     z-index: 1;
 }
 
-.dropdown-content a {
+.edu-dropdown-content p {
+    text-align: left;
+    font-size: large;
+    font: 100;
+    color: black;
+    transition: all ease-in-out 0.15s;
+}
+
+.edu-dropdown-content a {
     color: black;
     padding: 12px 16px;
     width: 100%;
@@ -192,7 +206,7 @@ nav .nav_tabs a:hover,
     display: block;
 }
 
-.dropdown-content a:hover {
+.edu-dropdown-content a:hover {
     background-color: #ddd;
 }
 
