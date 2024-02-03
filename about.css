@@ -131,14 +131,22 @@ nav .nav_tabs a:hover,
     margin-left: auto;
 }
 
+details[open]>summary::before {
+    content:url(pics/bxs-chevron-down.svg);
+
+}
+details>summary::before {
+    content:url(pics/bxs-chevron-right.svg);
+
+}
+
 details {
     font:
-        16px "Open Sans"
+        16px "Open Sans",
         sans-serif;
     width: 100%;
     font-size: large;
     text-align: left;
-    
 
 }
 
@@ -150,8 +158,11 @@ details>summary {
     box-shadow: 2px 1px 5px #aaa9a9;
     cursor: pointer;
     border-radius: 0.25rem;
-}
+    display: flex; 
+    align-items: center;
 
+
+}
 details>p {
     border-radius: 0.25rem;
     background-color: #f0f0f0;
@@ -160,6 +171,3 @@ details>p {
 
 }
 
-details[open]>summary {
-    background-color: rgb(241, 241, 241);
-}
